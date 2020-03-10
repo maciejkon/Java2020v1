@@ -15,7 +15,7 @@ public class Main {
 
         Human me = new Human();
 
-        me.firstName="Maciej";
+        me.firstName="Ola";
         me.lastName="Weltrowski";
         me.pet=new Animal("Myszojeleń");
         me.car=new Car("Volkswagen","VW","x12345");
