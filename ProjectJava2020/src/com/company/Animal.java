@@ -27,22 +27,22 @@ public class Animal {
     }
 
     void feed(){
-        if(isAlive()==true) {
+        if(isAlive()) {
             weight += 2;
-            System.out.println(name + " thx for food");
+            System.out.println(name + " THX for food " + "my weight is: " + weight);
         }
         else{
-            System.out.println("your pet is dead");
+            System.out.println("OMG, your pet is dead!!!");
         }
     }
 
     void walk(){
-        if(isAlive()==true){
+        if(isAlive()){
             weight-=2.0;
-            System.out.println(name+ " thx for walk. "+weight);
+            System.out.println(name+ " THX for walk "+ " my weight is: " + weight);
         }
         else {
-            System.out.println("your pet is dead");
+            System.out.println("OMG, your pet is dead!!!");
         }
     }
     boolean isAlive(){

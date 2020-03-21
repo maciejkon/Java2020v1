@@ -6,7 +6,7 @@ public class Main {
         Animal dog = new Animal("dog");
         dog.name="pies";
 
-        dog.feed();
+
 
         Animal lion = new Animal("lion");
         lion.name="lion";
@@ -20,7 +20,10 @@ public class Main {
         me.pet=new Animal("Myszojeleń");
         me.car=new Car("Volkswagen","VW","x12345");
 
-        System.out.println(me.car.plates);
+        dog.feed();
+        dog.feed();
+        dog.feed();
+        dog.walk();
 
 
 
