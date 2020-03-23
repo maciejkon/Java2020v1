@@ -18,4 +18,9 @@ public class Car {
     public Double getValue() {
         return this.value;
     }
+
+    public String toString(){
+        return this.producer + " " + this.brand + " " + this.plates;
+    }
 }
+

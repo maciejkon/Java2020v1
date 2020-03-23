@@ -15,16 +15,23 @@ public class Animal {
     public Animal(String spieces) {
         this.spieces=spieces;
 
-        if (spieces=="lion"){
-            this.weight=DEFAULT_LION_WEIGHT;
-        }
-        else if (spieces=="mouse"){
-            this.weight=DEFAULT_MOUSE_WEIGHT;
-        }
-        else if (spieces=="dog"){
-            this.weight=DEFAULT_DOG_WEIGHT;
+        switch (spieces) {
+            case "lion":
+                this.weight = DEFAULT_LION_WEIGHT;
+                break;
+            case "mouse":
+                this.weight = DEFAULT_MOUSE_WEIGHT;
+                break;
+            case "dog":
+                this.weight = DEFAULT_DOG_WEIGHT;
+                break;
         }
     }
+
+    public String toString(){
+        return this.spieces + " " + this.name;
+    }
+
 
     void feed(){
         if(isAlive()) {

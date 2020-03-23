@@ -23,6 +23,10 @@ public class Human {
         }
     }
 
+    public String toString(){
+        return this.firstName + " " + this.lastName + " " +this.pet;
+    }
+
     public Car getCar(){
         return this.car;
     }
