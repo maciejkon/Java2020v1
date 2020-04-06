@@ -1,6 +1,7 @@
 package com.company;
 
 import devices.Car;
+import devices.Phone;
 
 public class Main {
 
@@ -24,6 +25,7 @@ public class Main {
         wife.setSalary(3421.0);
 
         Car dirtyOne = new Car("Bravo","Fiat","xy12340",123.0);
+        Phone phone11=new Phone("Samsung","galaxyS1000",10000.0,17.6,true);
 
         me.setCar(dirtyOne);
         wife.setCar(dirtyOne);
@@ -38,7 +40,18 @@ public class Main {
         me.feed();
 
 
-
+        try {
+            me.sell();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        try {
+            lion.sell();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        phone11.sell();
+        dirtyOne.sell();
 
 
     }
