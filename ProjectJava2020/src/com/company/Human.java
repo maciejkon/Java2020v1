@@ -1,6 +1,9 @@
 package com.company;
 
-public class Human {
+import devices.Car;
+import devices.Phone;
+
+public class Human extends Animal{
     String firstName;
     String lastName;
     com.company.Animal pet;
@@ -8,6 +11,11 @@ public class Human {
     private Car car;
 
     private Double salary;
+
+    public Human() {
+        super("Homo Sapiens");
+        this.weight=89.0;
+    }
 
     public void setCar(Car car){
         if (car.getValue()<=this.salary) {

@@ -5,7 +5,7 @@ import java.io.File;
 public class Animal {
     final String spieces;
     String name;
-    private Double weight;
+    protected Double weight;
     File pic;
 
     static final public Double DEFAULT_DOG_WEIGHT = 10.0;
