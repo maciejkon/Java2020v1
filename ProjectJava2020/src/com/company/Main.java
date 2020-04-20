@@ -12,11 +12,8 @@ public class Main {
         Human me = new Human("Maciej", "Weltrowski", 2100.0, 100.0);
         Human wife = new Human("Ania", "Kowalska", 1300.0, 100.0);
 
-        Animal dog = new Animal("dog");
-        dog.name = "pies";
-        Animal lion = new Animal("lion");
-        lion.name = "lion";
-        me.pet = dog;
+
+
         Animal husky = new Pet("dog");
         Animal pig = new FarmAnimal("pig");
 

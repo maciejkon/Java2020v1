@@ -6,7 +6,7 @@ import devices.Saleable;
 
 import java.io.File;
 
-public class Animal implements Edible, Saleable {
+public abstract class Animal implements Edible, Saleable {
     final String spieces;
     String name;
     protected Double weight;
@@ -36,7 +36,7 @@ public class Animal implements Edible, Saleable {
     }
 
     public String toString() {
-        return this.spieces + " " + this.name + " ";
+        return this.spieces;
     }
 
     void feed() {
@@ -71,7 +71,7 @@ public class Animal implements Edible, Saleable {
             throw new Exception("no this way");
         }
 
-        System.out.println(this.toString() + "adiooos");
+        System.out.println(this.toString() + " adiooos");
         this.weight = 0.0;
     }
 
