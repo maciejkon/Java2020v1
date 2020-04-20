@@ -3,56 +3,77 @@ package com.company;
 import devices.Car;
 import devices.Phone;
 
-public class Human extends Animal{
-    String firstName;
-    String lastName;
+public class Human extends Animal {
+
+    public String firstName;
+    final String lastName;
     com.company.Animal pet;
-    Phone phone;
+    private Phone phone;
     private Car car;
-
     private Double salary;
+    private Double money;
 
-    public Human() {
+    public Human(String firstName, String lastName, Double salary, Double money) {
         super("Homo Sapiens");
-        this.weight=89.0;
+        this.weight = 89.0;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.salary = salary;
+        this.money = money;
     }
 
-    public void setCar(Car car){
-        if (car.getValue()<=this.salary) {
-            System.out.println("Great you can buy it by cash");
-            this.car = car;
-        }
-        else if (car.getValue()<= this.salary *12) {
-            System.out.println("Not so great, but you can buy it ");
-            this.car=car;
-        }
-        else{
-            System.out.println("Sorry , get rise");
-        }
+    @Override
+    public void sell(Human seller, Human buyer, Double value) throws Exception {
+        throw new Exception("you cannot sell human!!!");
     }
 
-    public String toString(){
-        return this.firstName + " " + this.lastName + " " +this.pet;
+    public void setPhone(Phone phone) {
+        this.phone = phone;
     }
 
-    public Car getCar(){
-        return this.car;
+    public Phone getPhone() {
+        return phone;
     }
-
 
     public Double getSalary() {
-        //readonly
-        //autoryzacja
-        //logi
-        return salary; //podstawa + premia + prowizja;
+        return salary;
     }
 
     public void setSalary(Double salary) {
-        //walidacje
-        //logowanie/logi
-        //integracja z innym systemem
         this.salary = salary;
     }
 
+    public void goToWork() {
+        this.money += salary;
+    }
+
+    public void setCar(Car car) {
+        if (car.getValue() <= this.salary) {
+            //System.out.println("Great you can buy it by cash");
+            this.car = car;
+        } else if (car.getValue() <= this.salary * 12) {
+            //System.out.println("Not so great, but you can buy it ");
+            this.car = car;
+        } else {
+            System.out.println("Sorry , get rise");
+        }
+
+    }
+
+    public Car getCar() {
+        return this.car;
+    }
+
+    public Double getMoney() {
+        return money;
+    }
+
+    public void setMoney(Double money) {
+        this.money = money;
+    }
+
+    public String toString() {
+        return this.firstName + " " + this.lastName;
+    }
 
 }

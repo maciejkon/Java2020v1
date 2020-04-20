@@ -1,7 +1,8 @@
 package devices;
 
+
+import com.company.Human;
+
 public interface Saleable {
-    public void sell() throws Exception;
-
-
+    void sell(Human seller, Human buyer, Double value) throws Exception;
 }

@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="93964647-6bf3-4627-9a4b-b57ed4149dc7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/Edible.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/devices/Saleable.java" afterDir="false" />
+    <list default="true" id="93964647-6bf3-4627-9a4b-b57ed4149dc7" name="Default Changelist" comment="task: Create and implement interface Saleable">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Human.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/devices/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/devices/Car.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/devices/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/devices/Device.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/devices/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/devices/Phone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/devices/Saleable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/devices/Saleable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +37,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -78,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586181774849</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="task: Create and implement interface Saleable">
+      <created>1586183675409</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1586183675409</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -97,13 +107,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="cosmetic changes" />
     <MESSAGE value="task: Create Device class" />
-    <option name="LAST_COMMIT_MESSAGE" value="task: Create Device class" />
+    <MESSAGE value="task: Create and implement interface Saleable" />
+    <option name="LAST_COMMIT_MESSAGE" value="task: Create and implement interface Saleable" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1586183166069">
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1586959747682">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1586183166069" />
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1586959747682" />
     <state x="808" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1583855705258">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -112,38 +123,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="756" y="405" width="407" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1583780638660" />
-    <state x="611" y="114" key="CommitChangelistDialog2" timestamp="1586183671503">
+    <state x="611" y="114" key="CommitChangelistDialog2" timestamp="1586184095326">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="611" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1586183671503" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1586183581839">
+    <state x="611" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1586184095326" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1587373409951">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586183581839" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1586183581839">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587373409951" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1587373409950">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586183581839" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1586183581839">
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587373409950" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1587373409950">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586183581839" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1586183581839">
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587373409950" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1587373409950">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586183581839" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1586181846698">
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587373409950" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1586958767878">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1586181846698" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1586177357924">
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1586958767878" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1586183778140">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586177357924" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1586183778140" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1587387203604">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587387203604" />
     <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584788749654">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584788749654" />
+    <state x="702" y="139" key="refactoring.ChangeSignatureDialog" timestamp="1587107844253">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="702" y="139" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587107844253" />
     <state x="623" y="225" key="search.everywhere.popup" timestamp="1586182030557">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

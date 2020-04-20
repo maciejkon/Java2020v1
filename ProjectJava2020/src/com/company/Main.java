@@ -6,52 +6,37 @@ import devices.Phone;
 public class Main {
 
     public static void main(String[] args) {
+
+        Human me = new Human("Maciej", "Weltrowski", 2100.0, 100.0);
+        Human wife = new Human("Ania", "Kowalska", 1300.0, 100.0);
+
         Animal dog = new Animal("dog");
-        dog.name="pies";
-
+        dog.name = "pies";
         Animal lion = new Animal("lion");
-        lion.name="lion";
+        lion.name = "lion";
+        me.pet = dog;
 
-        Human me = new Human();
+        Car car1 = new Car("Fiat", "Bravo", "xy12340", 123.0);
+        me.setCar(car1);
+        Car car2 = new Car("Opel", "Corsa", "GCH13480", 100.0);
 
-        me.firstName="Ola";
-        me.lastName="Weltrowski";
-        me.setSalary(12345.0);
-        me.pet=new Animal("Myszojeleń");
+        Phone phone11 = new Phone("Samsung", "galaxyS1000", 10000.0, 17.6, true);
+        me.setPhone(phone11);
+        Phone iPhone = new Phone("Apple", "iphone15", 200.0, 17.6, false);
 
-        Human wife = new Human();
-        wife.firstName="Ania";
-        wife.lastName="Kowalska";
-        wife.setSalary(3421.0);
-
-        Car dirtyOne = new Car("Bravo","Fiat","xy12340",123.0);
-        Phone phone11=new Phone("Samsung","galaxyS1000",10000.0,17.6,true);
-
-        me.setCar(dirtyOne);
-        wife.setCar(dirtyOne);
-
-        System.out.println(me.getCar());
-        System.out.println(wife.getCar());
-        System.out.println(me);
-        System.out.println(wife);
-        System.out.println(lion);
-
-        System.out.println(me.spieces);
-        me.feed();
-
-
+        System.out.println("Maciej auto: " + me.getCar());
+        System.out.println("Ania auto: " + wife.getCar());
+        System.out.println("Maciej pieniądze przed transakcją: " + me.getMoney());
+        System.out.println("Ania pieniądze przed transakcją: " + wife.getMoney());
         try {
-            me.sell();
+            me.getCar().sell(me, wife, 10.0);
         } catch (Exception e) {
             e.printStackTrace();
         }
-        try {
-            lion.sell();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        phone11.sell();
-        dirtyOne.sell();
+        System.out.println("Maciej auto: " + me.getCar());
+        System.out.println("Ania auto: " + wife.getCar());
+        System.out.println("Maciej pieniądze po transakcji: " + me.getMoney());
+        System.out.println("Ania pieniądze po transakcji: " + wife.getMoney());
 
 
     }
