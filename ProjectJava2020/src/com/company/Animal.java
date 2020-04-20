@@ -1,5 +1,6 @@
 package com.company;
 
+import creatures.Pet;
 import devices.Saleable;
 
 
@@ -22,6 +23,7 @@ public class Animal implements Edible, Saleable {
 
         switch (spieces) {
             case "lion":
+
                 this.weight = DEFAULT_LION_WEIGHT;
                 break;
             case "mouse":
@@ -65,9 +67,10 @@ public class Animal implements Edible, Saleable {
 
     @Override
     public void beEaten() throws Exception {
-        if (this instanceof Human) {
-            throw new Exception("no this way im human");
+        if (this instanceof Human || this instanceof Pet) {
+            throw new Exception("no this way");
         }
+
         System.out.println(this.toString() + "adiooos");
         this.weight = 0.0;
     }

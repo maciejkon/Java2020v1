@@ -1,5 +1,7 @@
 package com.company;
 
+import creatures.FarmAnimal;
+import creatures.Pet;
 import devices.Car;
 import devices.Phone;
 
@@ -15,6 +17,8 @@ public class Main {
         Animal lion = new Animal("lion");
         lion.name = "lion";
         me.pet = dog;
+        Animal husky = new Pet("dog");
+        Animal pig = new FarmAnimal("pig");
 
         Car car1 = new Car("Fiat", "Bravo", "xy12340", 123.0);
         me.setCar(car1);
@@ -24,7 +28,7 @@ public class Main {
         me.setPhone(phone11);
         Phone iPhone = new Phone("Apple", "iphone15", 200.0, 17.6, false);
 
-        System.out.println("Maciej auto: " + me.getCar());
+        /*/System.out.println("Maciej auto: " + me.getCar());
         System.out.println("Ania auto: " + wife.getCar());
         System.out.println("Maciej pieniądze przed transakcją: " + me.getMoney());
         System.out.println("Ania pieniądze przed transakcją: " + wife.getMoney());
@@ -36,8 +40,14 @@ public class Main {
         System.out.println("Maciej auto: " + me.getCar());
         System.out.println("Ania auto: " + wife.getCar());
         System.out.println("Maciej pieniądze po transakcji: " + me.getMoney());
-        System.out.println("Ania pieniądze po transakcji: " + wife.getMoney());
+        System.out.println("Ania pieniądze po transakcji: " + wife.getMoney());*/
 
+        try {
+            pig.beEaten();
+            husky.beEaten();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
     }
 }

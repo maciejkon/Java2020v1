@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="93964647-6bf3-4627-9a4b-b57ed4149dc7" name="Default Changelist" comment="task: Create and implement interface Saleable">
+    <list default="true" id="93964647-6bf3-4627-9a4b-b57ed4149dc7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/out/production/ProjectJava2020/META-INF/ProjectJava2020.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/creatures/FarmAnimal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/creatures/Pet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Human.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/devices/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/devices/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/devices/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/devices/Device.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/devices/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/devices/Phone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/devices/Saleable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/devices/Saleable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -88,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586183675409</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="task: Real Selling + Cosmetic changes">
+      <created>1587387308510</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1587387308510</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -108,7 +113,8 @@
     <MESSAGE value="cosmetic changes" />
     <MESSAGE value="task: Create Device class" />
     <MESSAGE value="task: Create and implement interface Saleable" />
-    <option name="LAST_COMMIT_MESSAGE" value="task: Create and implement interface Saleable" />
+    <MESSAGE value="task: Real Selling + Cosmetic changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="task: Real Selling + Cosmetic changes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1586959747682">
@@ -123,26 +129,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="756" y="405" width="407" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1583780638660" />
-    <state x="611" y="114" key="CommitChangelistDialog2" timestamp="1586184095326">
+    <state x="611" y="114" key="CommitChangelistDialog2" timestamp="1587387306850">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="611" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1586184095326" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1587373409951">
+    <state x="611" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587387306850" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1587390277267">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587373409951" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1587373409950">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587390277267" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1587390277267">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587373409950" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1587373409950">
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587390277267" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1587390277267">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587373409950" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1587373409950">
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587390277267" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1587390277267">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587373409950" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587390277267" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1586958767878">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
