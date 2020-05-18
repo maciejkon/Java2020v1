@@ -1,8 +1,8 @@
 package devices;
 
-import com.company.Human;
+import creatures.Human;
 
-public class Device implements Saleable {
+public abstract class Device implements Saleable {
     public final String producer;
     public final String model;
     public final Double value;
@@ -12,6 +12,8 @@ public class Device implements Saleable {
         this.model = model;
         this.value = value;
     }
+
+    public abstract void turnOn();
 
     public Double getValue() {
         return value;

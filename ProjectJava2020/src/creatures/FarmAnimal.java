@@ -1,9 +1,14 @@
 package creatures;
 
-import com.company.Animal;
-
 public class FarmAnimal extends Animal {
-    public FarmAnimal(String spieces) {
+    final public Integer idNumber;
+
+    static final public Double DEFAULT_FOOD_WEIGHT = 1.5;
+
+    public FarmAnimal(String spieces, Integer idNumber) {
         super(spieces);
+        this.idNumber = idNumber;
+
     }
+
 }

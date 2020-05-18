@@ -1,6 +1,6 @@
 package devices;
 
-import com.company.Human;
+import creatures.Human;
 
 public class Car extends Device {
 
@@ -9,6 +9,11 @@ public class Car extends Device {
     public Car(String producer, String model, String plates, Double value) {
         super(producer, model, value);
         this.plates = plates;
+    }
+
+    @Override
+    public void turnOn() {
+        System.out.println("Your car is ready to go!");
     }
 
     @Override

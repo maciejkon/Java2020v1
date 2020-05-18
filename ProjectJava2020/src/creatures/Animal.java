@@ -1,29 +1,25 @@
-package com.company;
+package creatures;
 
-import creatures.Pet;
 import devices.Saleable;
 
-
-import java.io.File;
-
-public abstract class Animal implements Edible, Saleable {
-    final String spieces;
+public abstract class Animal implements Edible, Saleable, Feedable {
+    public final String species;
     String name;
     protected Double weight;
-
-
     //File pic;
 
     static final public Double DEFAULT_DOG_WEIGHT = 10.0;
     static final public Double DEFAULT_LION_WEIGHT = 190.0;
     static final public Double DEFAULT_MOUSE_WEIGHT = 0.05;
+    static final public Double DEFAULT_FOOD_WEIGHT = 1.0;
 
-    public Animal(String spieces) {
-        this.spieces = spieces;
 
-        switch (spieces) {
+    public Animal(String species) {
+        this.species = species;
+
+
+        switch (species) {
             case "lion":
-
                 this.weight = DEFAULT_LION_WEIGHT;
                 break;
             case "mouse":
@@ -36,32 +32,30 @@ public abstract class Animal implements Edible, Saleable {
     }
 
     public String toString() {
-        return this.spieces;
+        return this.species;
     }
 
-    void feed() {
-        if (isAlive()) {
-            weight += 2;
+    @Override
+    public void feed() {
+        feed(DEFAULT_FOOD_WEIGHT);
+    }
+
+    @Override
+    public void feed(Double foodWeight) {
+        if (weight > 0) {
+            weight += foodWeight;
             System.out.println(name + " THX for food " + "my weight is: " + weight);
         } else {
             System.out.println("OMG, your pet is dead!!!");
         }
     }
 
-    void walk() {
-        if (isAlive()) {
+    public void walk() {
+        if (weight > 0) {
             weight -= 2.0;
             System.out.println(name + " THX for walk " + " my weight is: " + weight);
         } else {
             System.out.println("OMG, your pet is dead!!!");
-        }
-    }
-
-    boolean isAlive() {
-        if (this.weight > 0) {
-            return true;
-        } else {
-            return false;
         }
     }
 
@@ -91,4 +85,5 @@ public abstract class Animal implements Edible, Saleable {
             throw new Exception("Wrong owner");
         }
     }
+
 }

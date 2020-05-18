@@ -1,4 +1,4 @@
-package com.company;
+package creatures;
 
 import devices.Car;
 import devices.Phone;
@@ -7,7 +7,7 @@ public class Human extends Animal {
 
     public String firstName;
     final String lastName;
-    com.company.Animal pet;
+    Animal pet;
     private Phone phone;
     private Car car;
     private Double salary;

@@ -1,6 +1,9 @@
 package devices;
 
-import com.company.Human;
+import creatures.Human;
+
+import java.net.MalformedURLException;
+import java.net.URL;
 
 public class Phone extends Device {
 
@@ -11,6 +14,31 @@ public class Phone extends Device {
         super(producer, model, value);
         this.screenSize = screenSize;
         this.isAndroid = isAndroid;
+    }
+
+    @Override
+    public void turnOn() {
+        System.out.println("your phone is on!");
+    }
+
+    public void installAnApp(String appName) throws MalformedURLException {
+        this.installAnApp(appName, "latest");
+
+    }
+
+    public void installAnApp(String appName, String version) throws MalformedURLException {
+        URL url = new URL("https", "https://ourAppStore/" + appName + "/" + version, 443, appName);
+        this.installAnApp(url);
+    }
+
+    public void installAnApp(URL url) {
+        System.out.println("zainstalowałem aplikacje " + url.getFile());
+    }
+
+    public void installAnApp(String[] appNames) throws MalformedURLException {
+        for (String appName : appNames) {
+            installAnApp(appName);
+        }
     }
 
     @Override
@@ -30,5 +58,9 @@ public class Phone extends Device {
         } else {
             throw new Exception("You can't sel this device (wrong owner) ");
         }
+    }
+
+    public String toString() {
+        return "Phone: " + this.producer + " " + this.model + " " + this.screenSize;
     }
 }
