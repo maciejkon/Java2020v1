@@ -2,7 +2,7 @@ package creatures;
 
 import devices.Saleable;
 
-public abstract class Animal implements Edible, Saleable, Feedable {
+public abstract class Animal implements Edible, Saleable, Feedable, Comparable<Animal> {
     public final String species;
     String name;
     protected Double weight;
@@ -48,6 +48,11 @@ public abstract class Animal implements Edible, Saleable, Feedable {
         } else {
             System.out.println("OMG, your pet is dead!!!");
         }
+    }
+
+    public int compareTo(Animal otherAnimal) {
+        return (int) (otherAnimal.weight - this.weight);
+
     }
 
     public void walk() {
